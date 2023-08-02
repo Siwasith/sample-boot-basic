@@ -19,5 +19,16 @@ public class HelloControllerTest {
         String response = controller.hello();
         // Assert
         assertEquals("Hello World!", response);
+
+        
+    }
+
+    public void testSum() {
+        int response = controller.sum(1,2);
+        assertEquals( 3, response);
+
+
+        int response2 = controller.sum(3,2);
+        assertEquals( 5, response2);
     }
 }
